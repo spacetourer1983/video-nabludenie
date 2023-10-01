@@ -1,0 +1,51 @@
+.category {
+  background-color: #e6e6e6;
+  padding: 90px 0;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.category-header {
+  color: #000;
+  text-align: center;
+}
+.category-title {
+  font: 700 36px/45px Comfortaa;
+  margin-bottom: 40px;
+}
+.category-subtitle {
+  font: 300 20px/30px Comfortaa;
+  margin-bottom: 105px;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.category-grid__item {
+  width: 375px;
+  height: 280px;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.category-grid__item.business {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/seminar.jpg) center/cover;
+}
+.category-grid__item.home {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/house.png) center/cover;
+}
+.category-grid__item.industry {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/industry.jpg) center/cover;
+}
+.category-grid__item-title {
+  font: 400 24px/32px Comfortaa;
+}

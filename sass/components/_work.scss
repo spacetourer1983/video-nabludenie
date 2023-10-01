@@ -1,0 +1,15 @@
+.work {
+  background-color: #0f0f0f;
+  padding: 90px 0 90px;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.work-title {
+  font: 700 36px/45px Comfortaa;
+  margin-bottom: 105px;
+  color: #fff;
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+.order {
+  background-color: #fff;
+  background: linear-gradient(
+      to bottom,
+      rgba(230, 230, 230, 0.3),
+      rgba(15, 15, 15, 0.5)
+    ),
+    url(/assets/images/order_bg.jpg) center/cover;
+  padding: 90px 0 90px;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.order-title {
+  font: 700 36px/45px Comfortaa;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.order-subtitle {
+  font: 300 20px/30px Comfortaa;
+  margin-bottom: 105px;
+  text-align: center;
+  &:last-child {
+    color: #fff;
+  }
+}
+.order-subtitle__link {
+  font: 300 20px/30px Comfortaa;
+  color: #fff;
+  text-decoration: underline;
+}
+.order-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.order-form__input {
+  outline: none;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  font: 400 16px/22px Roboto;
+  padding: 16px 24px;
+}
+select.order-form__input {
+  position: relative;
+  appearance: none;
+}
+
+.order-form__button {
+  padding: 18px 24px;
+}

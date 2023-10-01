@@ -1,0 +1,39 @@
+.price {
+  background-color: #0f0f0f;
+  padding: 90px 0 90px;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.price-title {
+  font: 700 36px/45px Comfortaa;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+}
+.price-table {
+  width: 100%;
+  empty-cells: hide;
+  border-collapse: collapse;
+  border-bottom: 1px solid #5c5c5c;
+}
+.price-table__header {
+  font: 700 20px/20px Comfortaa;
+  color: #f05609;
+  text-align: left;
+  padding: 20px;
+}
+.price-table__row {
+  background: 0f0f0f;
+}
+.price-table__row:nth-child(2n) {
+  background: #5c5c5c;
+}
+.price-table__cell {
+  width: 33%;
+  padding: 20px;
+  font: 300 18px/20px Roboto;
+  color: #fff;
+}

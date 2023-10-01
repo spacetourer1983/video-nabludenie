@@ -1,0 +1,114 @@
+.feature {
+  background-color: #252525;
+  padding: 90px 0;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.feature-header {
+  color: #fff;
+  text-align: center;
+}
+.feature-title {
+  font: 400 36px/45px Comfortaa;
+  margin-bottom: 40px;
+}
+.feature-subtitle {
+  font: 400 20px/30px Comfortaa;
+  margin-bottom: 105px;
+}
+.feature-grid {
+  margin-bottom: 105px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 45px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "feature-grid__top-left feature-grid__center-column feature-grid__top-right"
+    "feature-grid__middle-left feature-grid__center-column feature-grid__middle-right"
+    "feature-grid__bottom-left feature-grid__center-column feature-grid__bottom-right";
+}
+.feature-grid__top-left {
+  grid-area: feature-grid__top-left;
+}
+.feature-grid__middle-left {
+  grid-area: feature-grid__middle-left;
+}
+.feature-grid__bottom-left {
+  grid-area: feature-grid__bottom-left;
+}
+.feature-grid__top-right {
+  grid-area: feature-grid__top-right;
+}
+.feature-grid__middle-right {
+  grid-area: feature-grid__middle-right;
+}
+.feature-grid__bottom-right {
+  grid-area: feature-grid__bottom-right;
+}
+.feature-grid__top-left,
+.feature-grid__middle-left,
+.feature-grid__bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  & .feature-grid__card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  & .feature-grid__card-title {
+    text-align: right;
+  }
+  & .feature-grid__card-subtitle {
+    text-align: right;
+  }
+}
+.feature-grid__center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: feature-grid__center-column;
+}
+.feature-grid__top-right,
+.feature-grid__middle-right,
+.feature-grid__bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  & .feature-grid__card {
+    display: flex;
+    flex-direction: row;
+  }
+  & .feature-grid__card-title {
+    text-align: left;
+  }
+  & .feature-grid__card-subtitle {
+    text-align: left;
+  }
+}
+.feature-grid__center-image {
+  width: 100%;
+  height: auto;
+}
+
+.feature-grid__card-icon {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 20px 0;
+}
+.feature-grid__card-text {
+  max-width: 200px;
+}
+.feature-grid__card-title {
+  color: #f05609;
+  margin-bottom: 20px;
+}
+.feature-grid__card-subtitle {
+  color: #fff;
+}
+.feature-button {
+  padding: 20px 60px;
+}
