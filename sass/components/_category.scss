@@ -8,11 +8,9 @@
   }
 }
 .category-header {
-  color: #000;
   text-align: center;
 }
 .category-title {
-  font: 700 36px/45px Comfortaa;
   margin-bottom: 40px;
 }
 .category-subtitle {
@@ -21,15 +19,19 @@
 }
 .category-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 .category-grid__item {
-  width: 375px;
-  height: 280px;
+  max-width: 375px;
+  min-height: 280px;
   border-radius: 20px;
   padding: 20px;
-  color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

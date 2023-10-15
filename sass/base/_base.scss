@@ -3,11 +3,29 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+.section-title {
+  font: 400 42px/60px Comfortaa;
+  @media screen and (max-width: 560px) {
+    font: 400 32px/42px Comfortaa;
+  }
+  @media screen and (max-width: 460px) {
+    font: 400 22px/28px Comfortaa;
+  }
+}
 .button {
   outline: none;
   border: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   border-radius: 30px;
   background-color: #f05609;
+}
+.orange {
+  color: #f05609;
+}
+.white {
+  color: #fff;
+}
+.black {
+  color: #000;
 }

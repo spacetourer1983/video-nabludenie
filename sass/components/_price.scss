@@ -8,9 +8,7 @@
   }
 }
 .price-title {
-  font: 700 36px/45px Comfortaa;
   margin-bottom: 40px;
-  color: #fff;
   text-align: center;
 }
 .price-table {
@@ -21,9 +19,15 @@
 }
 .price-table__header {
   font: 700 20px/20px Comfortaa;
-  color: #f05609;
   text-align: left;
   padding: 20px;
+  @media screen and (max-width: 515px) {
+    padding: 20px;
+    font: 700 16px/18px Comfortaa;
+    &:first-child {
+      display: none;
+    }
+  }
 }
 .price-table__row {
   background: 0f0f0f;
@@ -36,4 +40,11 @@
   padding: 20px;
   font: 300 18px/20px Roboto;
   color: #fff;
+  column-gap: 20px;
+  @media screen and (max-width: 515px) {
+    font: 300 14px/16px Roboto;
+    &:first-child {
+      display: none;
+    }
+  }
 }

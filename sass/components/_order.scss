@@ -14,7 +14,6 @@
   }
 }
 .order-title {
-  font: 700 36px/45px Comfortaa;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -22,13 +21,9 @@
   font: 300 20px/30px Comfortaa;
   margin-bottom: 105px;
   text-align: center;
-  &:last-child {
-    color: #fff;
-  }
 }
 .order-subtitle__link {
   font: 300 20px/30px Comfortaa;
-  color: #fff;
   text-decoration: underline;
 }
 .order-form {
@@ -37,6 +32,14 @@
   column-gap: 20px;
   width: 100%;
   margin-bottom: 60px;
+  @media screen and (max-width: 980px) {
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 20px;
+  }
+  @media screen and (max-width: 530px) {
+    grid-template-columns: repeat(1, 4fr);
+    row-gap: 20px;
+  }
 }
 .order-form__input {
   outline: none;

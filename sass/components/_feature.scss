@@ -8,11 +8,9 @@
   }
 }
 .feature-header {
-  color: #fff;
   text-align: center;
 }
 .feature-title {
-  font: 400 36px/45px Comfortaa;
   margin-bottom: 40px;
 }
 .feature-subtitle {
@@ -30,6 +28,10 @@
     "feature-grid__top-left feature-grid__center-column feature-grid__top-right"
     "feature-grid__middle-left feature-grid__center-column feature-grid__middle-right"
     "feature-grid__bottom-left feature-grid__center-column feature-grid__bottom-right";
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .feature-grid__top-left {
   grid-area: feature-grid__top-left;
@@ -55,15 +57,27 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media screen and (max-width: 600px) {
+    justify-content: flex-start;
+  }
   & .feature-grid__card {
     display: flex;
     flex-direction: row-reverse;
+    @media screen and (max-width: 600px) {
+      flex-direction: row;
+    }
   }
   & .feature-grid__card-title {
     text-align: right;
+    @media screen and (max-width: 600px) {
+      text-align: left;
+    }
   }
   & .feature-grid__card-subtitle {
     text-align: right;
+    @media screen and (max-width: 600px) {
+      text-align: left;
+    }
   }
 }
 .feature-grid__center-column {
@@ -98,17 +112,20 @@
   max-width: 50px;
   max-height: 50px;
   margin: 0 20px 0;
+  @media screen and (max-width: 600px) {
+    margin: 0 20px 0 0;
+  }
 }
 .feature-grid__card-text {
   max-width: 200px;
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+  }
 }
 .feature-grid__card-title {
-  color: #f05609;
   margin-bottom: 20px;
 }
-.feature-grid__card-subtitle {
-  color: #fff;
-}
+
 .feature-button {
   padding: 20px 60px;
 }

@@ -12,19 +12,27 @@
 .promo-title {
   max-width: 536px;
   font: 400 52px/60px Comfortaa;
-  color: #f05609;
+  @media screen and (max-width: 560px) {
+    font: 400 42px/50px Comfortaa;
+  }
+  @media screen and (max-width: 460px) {
+    font: 400 28px/32px Comfortaa;
+  }
 }
 .promo-subtitle {
   max-width: 536px;
-  font: 400 42px/60px Comfortaa;
-  color: #fff;
 }
 .promo-list {
   margin-top: 60px;
   max-width: 586px;
   font: 400 28px/44px Roboto;
-  color: #fff;
   margin-bottom: 90px;
+  @media screen and (max-width: 560px) {
+    font: 400 22px/28px Comfortaa;
+  }
+  @media screen and (max-width: 460px) {
+    font: 400 18px/24px Comfortaa;
+  }
 }
 .promo-list__item {
   &::before {

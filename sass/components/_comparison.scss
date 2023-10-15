@@ -1,0 +1,37 @@
+.comparison {
+  background-color: #000;
+  padding: 70px 0 70px;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.comparison-title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  @media screen and (max-width: 425px) {
+    grid-template-columns: repeat(1, 2fr);
+    row-gap: 20px;
+  }
+}
+.comparison-grid__item {
+  text-align: center;
+}
+.comparison-grid__item-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.comparison-grid__item-title {
+  font: 700 20px/32px Comfortaa;
+}
+.comparison-grid__item-subtitle {
+  font: 400 16px/24px Comfortaa;
+}

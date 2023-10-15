@@ -1,0 +1,42 @@
+.contact {
+  background-color: #fff;
+  background: linear-gradient(
+      to bottom,
+      rgba(230, 230, 230, 0.3),
+      rgba(15, 15, 15, 0.5)
+    ),
+    url(/assets/images/contact_bg.jpg) center/cover;
+  padding: 90px 0 90px;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact-title {
+  margin-bottom: 35px;
+}
+.contact-info {
+  padding: 60px 120px;
+  background-color: #fff;
+  text-align: center;
+  @media screen and (max-width: 500px) {
+    padding: 60px 20px;
+  }
+}
+.contact-info__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact-info__title {
+  font: 18px;
+  color: rgb(122, 122, 122);
+}
+.contact-info__text {
+  font: 900 20px/45px Comfortaa;
+  color: #000;
+}
+.contact-info__social {
+  margin: 45px 0 0;
+}
