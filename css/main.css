@@ -155,7 +155,7 @@ img {
 .promo {
   height: 100%;
   padding: 155px 0 90px 0;
-  background: url(/assets/images/promo_bg.jpg) center/cover;
+  background: url(../assets/images/promo_bg.jpg) center/cover;
 }
 .promo .container {
   display: flex;
@@ -435,15 +435,15 @@ img {
 }
 
 .category-grid__item.business {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/seminar.jpg) center/cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/seminar.jpg) center/cover;
 }
 
 .category-grid__item.home {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/house.png) center/cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/house.png) center/cover;
 }
 
 .category-grid__item.industry {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/industry.jpg) center/cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/industry.jpg) center/cover;
 }
 
 .category-grid__item-title {
@@ -513,7 +513,7 @@ img {
 
 .order {
   background-color: #fff;
-  background: linear-gradient(to bottom, rgba(230, 230, 230, 0.3), rgba(15, 15, 15, 0.5)), url(/assets/images/order_bg.jpg) center/cover;
+  background: linear-gradient(to bottom, rgba(230, 230, 230, 0.3), rgba(15, 15, 15, 0.5)), url(../assets/images/order_bg.jpg) center/cover;
   padding: 90px 0 90px;
 }
 .order .container {
@@ -754,7 +754,7 @@ select.order-form__input {
 
 .contact {
   background-color: #fff;
-  background: linear-gradient(to bottom, rgba(230, 230, 230, 0.3), rgba(15, 15, 15, 0.5)), url(/assets/images/contact_bg.jpg) center/cover;
+  background: linear-gradient(to bottom, rgba(230, 230, 230, 0.3), rgba(15, 15, 15, 0.5)), url(../assets/images/contact_bg.jpg) center/cover;
   padding: 90px 0 90px;
 }
 .contact .container {
