@@ -17,6 +17,8 @@ function toggleMenu() {
 menuItems.forEach(function(menuItem) {
   menuItem.addEventListener("click", function() {
     document.querySelector(".navbar").classList.remove("active");
+    closeIcon.style.display = "none";
+    showIcon.style.display = "block";
   });
 });
 hamburger.addEventListener("click", toggleMenu);
